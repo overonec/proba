@@ -21,6 +21,8 @@ jobs:
         run: sudo apt-get install google-chrome-stable
       - name: install dependencies
         run: pip install -r requirements.txt
+      - name: Install selenium
+        run: pip install selenium --upgrade
       - name: Run tests
         run: python new.py
 
